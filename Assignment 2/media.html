@@ -1,12 +1,114 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Media Elements</title>
-</head>
-<body>
-    <h1>My Media Assignment</h1>
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/1-SvuFIQjK8?si=lj-n4qI2g3MCtEMP" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-</body>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/media.css" />
+  </head>
+  <body>
+    <header>
+      <nav aria-labelledby="primary-navigation">
+        <ul>
+          <li>
+            <a href="#audio"> Audio  </a>
+          </li>
+          <li>
+            <a href="#video">  Video </a>
+          </li>
+          <li>
+            <a href="#iframe"> iframe  </a>
+          </li>
+          <li>
+            <a href="#embed">  Embed  </a>
+          </li>
+          <li>
+            <a href="#source">  Source  </a>
+          </li>
+          <li>
+            <a href="#track"> Track  </a>
+          </li>
+          <li class="two">
+            <a href="#picture">  Picture element  </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <hr>
+    <main>
+      <article id="audio" class="aud">
+        <section>
+          <h1><em>1. Audio element</em></h1>
+          <audio controls
+              src="assets/music/Black_Sherif_Ft_Fireboy_DML_-_So_it_Goes.mp3"
+            />
+          </audio>
+          <audio src="">
+            <source >
+          </audio>
+        </section>
+      </article>
+<hr>
+      <article id="video" class="vid">
+        <section>
+          <h1><em> Video element</em></h1>
+          <video controls
+           src="assets/videos/The Lion King (2019) (online-video-cutter.com).mp4" />
+          </video>
+        </section>
+      </article>
+<hr>
+      <div class="flex">
+        <article id="iframe" class="iframe">
+          <section>
+            <h1><em>Iframe element</em></h1>
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/drK6mdA9d_M?si=6OL1JX-WJK8d_sJV" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+          </section>
+        </article>
+<hr>     
+        <article id="embed">
+          <section>
+            <h1><em>Embed element</em></h1>
+            <embed
+            src="https://media.geeksforgeeks.org/wp-content/uploads/20210723103530/simplescreesdfdsrecorder2021071.gif"
+            width="300px" height="300px">
+          </section>
+        </article>        
+      </div>
+<hr>      
+      <article id="source">
+       <section>
+        <h1><em>Source</em></h1>
+        <video controls>
+          <source src="assets/videos/The Lion King (2019) (online-video-cutter.com).mp4">
+        </video>
+       </section>
+      </article>
+<hr>      
+      <article id="track">
+        <section>
+         <h1><em>Track element</em></h1>
+         <video controls>
+           <source src="assets/videos/John Wick (2014) (online-video-cutter.com).mp4">
+           <track src="assets/subtitle/John Wick (2014) (Awafim.tv).vtt" default kind="captions" srclang="en" label="English">
+         </video>
+        </section>
+ <hr>       
+       </article>
+       <article id="picture">
+        <section>
+          <h1><em>The picture element</em></h1>
+          <picture>
+            <source media="(min-width: 900px)" srcset="./assets/picture/IMG_3802.JPG">
+            <source media="(min-width: 650px)" srcset="./assets/picture/IMG_2991.JPG">
+            <source media="(min-width: 465px)" srcset="/assets/picture/IMG_3146.JPG">
+            <img src="./assets/picture/IMG_3593.JPG">
+          </picture>
+        </section>
+       </article>
+    </main>
+  </body>
 </html>
